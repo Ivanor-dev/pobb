@@ -4,7 +4,8 @@ Este projeto implementa um algoritmo de Branch and Bound para problemas de progr
 
 O arquivo de entrada deve ter o seguinte formato:
 
-<num_variaveis> <num_restricoes>
+<num_variaveis> 
+<num_restricoes>
 <c1 c2 c3 ... cn>
 <a11 a12 ... a1n> <b1>
 <a21 a22 ... a2n> <b2>
@@ -12,11 +13,10 @@ O arquivo de entrada deve ter o seguinte formato:
 
 Exemplo:
 
-3 2
-3 2 1
-1 2 3 4
-2 2 1 3
-
+3 2            # número de variáveis e número de restrições
+3 2 1          # função objetivo: max 3x0 + 2x1 + 1x2
+1 2 3 4        # restrição 1: 1x0 + 2x1 + 3x2 <= 4
+2 2 1 3        # restrição 2: 2x0 + 2x1 + 1x2 <= 3
 Neste exemplo, queremos maximizar 3x0 + 2x1 + 1x2, sujeito a duas restrições, com variáveis binárias x0, x1, x2 ∈ {0,1}.
 
 Para executar o projeto, é necessário ter Python instalado. Recomenda-se o uso de ambiente virtual (venv) para isolar as dependências. Para isso, abra o terminal no diretório do projeto e execute o comando:
